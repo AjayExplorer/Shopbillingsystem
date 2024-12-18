@@ -6,7 +6,7 @@ import java.util.Random;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
-
+//shopping system GUI will start hear 
 public class ShopBillingSystemGUI {
     private JFrame frame;
     private JTable table;
@@ -20,7 +20,7 @@ public class ShopBillingSystemGUI {
     public ShopBillingSystemGUI() {
         stock = new HashMap<>();
         priceMap = new HashMap<>();
-        billNumber = new Random().nextInt(10000) + 1; // Generate random bill number
+        billNumber = new Random().nextInt(10000) + 1; // Generate unique  bill number it may help to understand all bill details 
         initialize();
     }
 
@@ -30,7 +30,7 @@ public class ShopBillingSystemGUI {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
 
-        // Header Panel
+        // Header Panel of GUI
         JPanel headerPanel = new JPanel();
         headerPanel.setLayout(new GridLayout(2, 1));
         JLabel titleLabel = new JLabel("Shop Billing System", SwingConstants.CENTER);
@@ -55,6 +55,8 @@ public class ShopBillingSystemGUI {
         itemField = new JTextField();
         quantityField = new JTextField();
         priceField = new JTextField();
+
+        //add all the datas to the frame
 
         JButton addButton = new JButton("Add Item");
         JButton removeButton = new JButton("Remove Item");
@@ -96,6 +98,7 @@ public class ShopBillingSystemGUI {
 
         frame.setVisible(true);
     }
+    // this commented portion is for the QR genetatin  option for the billing system currently i don't need this option so it will be commented
     // // Key Listener for searching items in stock
     // itemField.addKeyListener(new KeyAdapter() {
     //     @Override
@@ -125,6 +128,7 @@ public class ShopBillingSystemGUI {
     //         });
     //     }
     // });
+    //form hear wee need this  portions 
 
     private void addItem() {
         try {
