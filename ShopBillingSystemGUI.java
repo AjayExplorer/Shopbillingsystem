@@ -96,6 +96,7 @@ public class ShopBillingSystemGUI {
 
         frame.setVisible(true);
     }
+    // this commented portion is for the QR genetatin  option for the billing system currently i don't need this option so it will be commented
     // // Key Listener for searching items in stock
     // itemField.addKeyListener(new KeyAdapter() {
     //     @Override
@@ -125,6 +126,7 @@ public class ShopBillingSystemGUI {
     //         });
     //     }
     // });
+    //form hear wee need this  portions 
 
     private void addItem() {
         try {
